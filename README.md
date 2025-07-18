@@ -1,19 +1,21 @@
 # Kydras-Playbooks
 Kydras-Playbooks is built for:  ✅ Fast reference  ✅ Mobile ops  ✅ Repeatable Red Team workflows
 
+
 # 📁 Kydras-Playbooks
 
-**Kydras-Playbooks** is part of the Kydras Offensive Toolkit — focused on **attack chains**, **Red Team workflows**, and **mobile-friendly operational guides**.
+Part of the **Kydras Offensive Toolkit Collection**, focused on **attack chains**, **Red Team workflows**, and **mobile-optimized playbooks**.
 
 ---
 
-## ✅ Playbooks Included
-- 🕵️ **OSINT Basic Playbook** — lightweight recon flow
-- 🎯 Coming soon: Phishing, Payload Delivery, AD Lateral Movement
+## ✅ What’s Inside
+- 🕵️ **OSINT Basic Playbook** → Quick recon chain
+- 💣 **Payload & Anonymity Flow** → Cheat sheets for payloads and stealth
+- 🎯 **Red Team Quickstart** → Mobile-ready command reference
 
 ---
 
-## ✅ Setup
+## ✅ Quick Setup
 ```bash
 git clone https://github.com/Kydras8/Kydras-Playbooks.git
 cd Kydras-Playbooks/playbooks
