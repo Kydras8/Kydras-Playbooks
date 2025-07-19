@@ -1,0 +1,31 @@
+🐉 Kydras Red Team Quickstart Cheat Sheet 🐉
+
+✅ OSINT:
+- python3 sherlock.py targetname
+- bash domain-recon-lite.sh
+- python3 phoneinfoga.py -n +15551234567
+
+✅ Payloads:
+- bash android-payload-lite.sh
+- bash simple-reverse-shell.sh
+
+✅ Anonymity:
+- bash proxychains-orbot-setup.sh
+- bash tor-ip-check.sh
+
+✅ Listeners:
+- msfconsole reverse shell: android/meterpreter/reverse_tcp
+- nc -lvnp 4444
+
+✅ Web Manual Tools:
+- osintframework.com
+- dnsdumpster.com
+- viewdns.info
+
+✅ Mobile Loot Folder:
+- ~/Kydras_Loot/
+
+✅ Pro Rule:
+🖤 *Always route through proxychains + Orbot or Termux Tor during active ops.*
+
+🐉 Red Team Flow: Light, Fast, Mobile. Nothing Is Off Limits.

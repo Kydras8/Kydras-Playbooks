@@ -1,0 +1,38 @@
+🐉 Kydras OSINT Basic Playbook 🐉
+
+🎯 Objective: Quick-hit recon chain targeting username, phone, domain, and open directories.
+
+---
+
+✅ 1. Username Enumeration:
+- Sherlock:
+  python3 ~/sherlock/sherlock.py targetname
+- Username Quick Checker:
+  python3 ~/Kydras-OSINT/tools/username-checker.py
+
+✅ 2. Phone Number Recon:
+- PhoneInfoga:
+  python3 ~/phoneinfoga/phoneinfoga.py -n +1XXXXXXXXXX
+
+✅ 3. Domain Recon:
+- ReconDog:
+  cd ~/ReconDog && python dog
+- Domain quick recon:
+  bash ~/Kydras-OSINT/tools/domain-recon-lite.sh
+
+✅ 4. OSINT Web Tools (Manual):
+- https://osintframework.com
+- https://dnsdumpster.com
+- https://viewdns.info
+
+✅ 5. IP Check (Stealth Verification):
+proxychains curl https://ifconfig.me
+
+---
+
+📁 Recommended Output Folder:
+mkdir -p ~/Kydras_Loot/osint_targetname
+
+✅ Pro Tip: Run proxychains for stealth anytime.
+
+🐉 OSINT Flow: Find Everything, Fast. Mobile Ready.

