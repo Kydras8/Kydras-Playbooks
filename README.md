@@ -1,8 +1,9 @@
-# Kydras-Playbooks
-Kydras-Playbooks is built for:  ✅ Fast reference  ✅ Mobile ops  ✅ Repeatable Red Team workflows
-
-
 # 📁 Kydras-Playbooks
+
+![Playbooks](https://img.shields.io/badge/type-Red_Team_Playbooks-red)
+![Markdown](https://img.shields.io/badge/language-Markdown-lightgrey)
+![Stars](https://img.shields.io/github/stars/Kydras8/Kydras-Playbooks.svg)
+![License](https://img.shields.io/badge/license-MIT-purple)
 
 Part of the **Kydras Offensive Toolkit Collection**, focused on **attack chains**, **Red Team workflows**, and **mobile-optimized playbooks**.
 
