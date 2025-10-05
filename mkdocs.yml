@@ -1,0 +1,31 @@
+site_name: Kydras Playbooks
+site_url: https://kydras8.github.io/Kydras-Playbooks/
+repo_url: https://github.com/Kydras8/Kydras-Playbooks
+theme:
+  name: material
+  palette:
+    - scheme: slate
+      primary: black
+      accent: amber
+  features:
+    - navigation.tabs
+    - navigation.top
+    - content.code.copy
+    - toc.integrate
+markdown_extensions:
+  - admonition
+  - footnotes
+  - toc:
+      permalink: true
+nav:
+  - Home: index.md
+  - Plays:
+    - OSINT: plays/osint.md
+    - Wi-Fi Recon: plays/wifi.md
+    - Mobile Ops: plays/mobile.md
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Kydras8
+    - icon: fontawesome/solid/house
+      link: https://kydras8.github.io
